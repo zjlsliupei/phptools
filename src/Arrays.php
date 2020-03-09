@@ -4,7 +4,7 @@
 namespace liupei\phptools;
 
 
-class Utils
+class Arrays
 {
     /**
      * 生成一棵树

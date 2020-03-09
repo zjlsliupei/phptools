@@ -24,4 +24,4 @@ $data = [
 ];
 
 
-print_r(liupei\phptools\Utils::generateTree($data));
+print_r(liupei\phptools\Arrays::generateTree($data));
