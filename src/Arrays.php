@@ -34,4 +34,21 @@ class Arrays
         }
         return $tree;
     }
+
+    /**
+     *  二维数组设置键名
+     *  @param array  $array 二维数组
+     *  @param string $key   要设置的键名，在二维数组中存在的键
+     *  @return array        键名提取成功的数组
+     */
+    public static function array2SetKey($array, $key)
+    {
+        $return = [];
+        foreach ($array as $value) {
+            if (isset($value[$key])) {
+                $return[$value[$key]] = $value;
+            }
+        }
+        return $return;
+    }
 }
